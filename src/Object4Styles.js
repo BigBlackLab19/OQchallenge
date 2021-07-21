@@ -1,8 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 
 function ObjectFourStyles() {
   return (
-    <div>
+    <Container>
       <p>Object # 4</p>
       <br />
       <p>
@@ -16,6 +17,7 @@ function ObjectFourStyles() {
         <br />
         top: 430px;
         <br />
+        <br />
         background: #36c929;
         <br />
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -23,8 +25,12 @@ function ObjectFourStyles() {
         transform: rotate(45deg);
         <br />
       </p>
-    </div>
+    </Container>
   );
 }
 
 export default ObjectFourStyles;
+
+const Container = styled.div`
+  padding-top: 25px;
+`;

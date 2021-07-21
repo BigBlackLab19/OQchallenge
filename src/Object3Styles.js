@@ -1,8 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 
 function ObjectThreeStyles() {
   return (
-    <div>
+    <Container>
       <p>Object # 3</p>
       <br />
       <p>
@@ -25,8 +26,12 @@ function ObjectThreeStyles() {
         <br />
         box-shadow: 10px 25px 5px rgba(0, 0, 0, 0.25);
       </p>
-    </div>
+    </Container>
   );
 }
 
 export default ObjectThreeStyles;
+
+const Container = styled.div`
+  padding-top: 25px;
+`;

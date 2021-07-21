@@ -1,8 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 
 function ObjectTwoStyles() {
   return (
-    <div>
+    <Container>
       <p>Object # 2</p>
       <br />
       <p>
@@ -17,8 +18,12 @@ function ObjectTwoStyles() {
         box-sizing: border-box; <br />
         transform: rotate(15deg); <br />
       </p>
-    </div>
+    </Container>
   );
 }
 
 export default ObjectTwoStyles;
+
+const Container = styled.div`
+  padding-top: 25px;
+`;

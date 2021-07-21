@@ -15,19 +15,43 @@ function Frame() {
       3: ObjectThreeStyles,
       4: ObjectFourStyles,
     };
-   console.log(num)
+    console.log(num);
     setObjectDisplay(styles[num]);
   }
-  console.log(objectDisplay)
+  console.log(objectDisplay);
   return (
     <>
-      <TopFrame />
+      <TopFrame>OQ Challenge</TopFrame>
       <Container>
         <LeftSideBar />
-        <ObjectOne onClick = {() => {handleChangeObjectDisplay(1)}} />
-        <ObjectTwo onClick = {() => {handleChangeObjectDisplay(2)}}/>
-        <ObjectThree onClick = {() => {handleChangeObjectDisplay(3)}} />
-        <ObjectFour onClick = {() => {handleChangeObjectDisplay(4)}} />
+        <ObjectOne
+          onClick={() => {
+            handleChangeObjectDisplay(1);
+          }}
+        >
+          Object # 1
+        </ObjectOne>
+        <ObjectTwo
+          onClick={() => {
+            handleChangeObjectDisplay(2);
+          }}
+        >
+          Object # 2
+        </ObjectTwo>
+        <ObjectThree
+          onClick={() => {
+            handleChangeObjectDisplay(3);
+          }}
+        >
+          Object # 3
+        </ObjectThree>
+        <ObjectFour
+          onClick={() => {
+            handleChangeObjectDisplay(4);
+          }}
+        >
+          Object # 4
+        </ObjectFour>
         <RightSideBar>{objectDisplay}</RightSideBar>
       </Container>
     </>
@@ -36,6 +60,9 @@ function Frame() {
 
 export default Frame;
 const ObjectOne = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 321px;
   height: 213px;
@@ -45,6 +72,9 @@ const ObjectOne = styled.div`
 `;
 
 const ObjectTwo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 137.1px;
   height: 213px;
@@ -57,11 +87,15 @@ const ObjectTwo = styled.div`
 `;
 
 const ObjectThree = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 321px;
   height: 213px;
   left: 287px;
   top: 439px;
+  color: white;
 
   background: #000000;
   border: 1px solid #000000;
@@ -70,6 +104,9 @@ const ObjectThree = styled.div`
 `;
 
 const ObjectFour = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 157.39px;
   height: 213px;
@@ -82,9 +119,14 @@ const ObjectFour = styled.div`
 `;
 
 const TopFrame = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 53px;
-  background-color: #c4c4c4;
+  background-color: #522dd9;
+  color: white;
+  font-weight: bolder;
 `;
 
 const Container = styled.div`
@@ -95,15 +137,16 @@ const Container = styled.div`
 const LeftSideBar = styled.div`
   width: 220px;
   height: 100vh;
-  background-color: #747474;
+  background-color: #323135;
 `;
 
 const RightSideBar = styled.div`
   padding: 0 10px;
-  display: flex;
-  width: 220px;
+  width: 280px;
   height: 100vh;
   border: 2px solid #000000;
   position: absolute;
   right: 0;
+  background-color: #323135;
+  color: white;
 `;

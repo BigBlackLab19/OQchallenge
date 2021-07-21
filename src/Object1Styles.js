@@ -1,8 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 
 function ObjectOneStyles() {
   return (
-    <div>
+    <Container>
       <p>Object # 1</p>
       <br />
       <p>
@@ -14,8 +15,12 @@ function ObjectOneStyles() {
         <br />
         background-color: #c4c4c4;
       </p>
-    </div>
+    </Container>
   );
 }
 
 export default ObjectOneStyles;
+
+const Container = styled.div`
+  padding-top: 25px;
+`;
