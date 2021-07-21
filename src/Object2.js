@@ -2,7 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 function Object2() {
-  return <ObjectTwo />;
+  const showCss = (event) => {
+    const styles = window.getComputedStyle(event.target);
+
+    console.log(styles.position, styles.width, styles.height, styles.left, styles.top, styles.background, styles.boxShadow, styles.transform);
+  };
+  return <ObjectTwo onClick={showCss}/>;
 }
 
 export default Object2;

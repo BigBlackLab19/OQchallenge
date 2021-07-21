@@ -39,7 +39,6 @@ const LeftSideBar = styled.div`
   height: 100vh;
   background-color: #747474;
 `;
-
 const RightSideBar = styled.div`
   width: 220px;
   height: 100vh;

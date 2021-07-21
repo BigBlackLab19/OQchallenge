@@ -2,7 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 function Object4() {
-  return <ObjectFour />;
+  const showCss = (event) => {
+    const styles = window.getComputedStyle(event.target);
+
+    console.log(styles.position, styles.width, styles.height, styles.left, styles.top, styles.background, styles.boxShadow, styles.transform);
+  };
+  return (
+    <ObjectFour onClick={showCss}/>
+  );
 }
 
 export default Object4;
