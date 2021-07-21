@@ -20,6 +20,8 @@ function ObjectThreeStyles() {
         <br />
         background: #000000;
         <br />
+        color: white;
+        <br />
         border: 1px solid #000000;
         <br />
         box-sizing: border-box;

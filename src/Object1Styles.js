@@ -13,7 +13,7 @@ function ObjectOneStyles() {
         left: 284px; <br />
         top: 108px; <br />
         <br />
-        background-color: #c4c4c4;
+        background-color: #2bc6e7;
       </p>
     </Container>
   );

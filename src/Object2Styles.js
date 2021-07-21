@@ -13,7 +13,7 @@ function ObjectTwoStyles() {
         left: 773.13px; <br />
         top: 103px; <br />
         <br />
-        background-color: #c92929; <br />
+        background-color: #d6d6d7; <br />
         border: 5px solid #000000; <br />
         box-sizing: border-box; <br />
         transform: rotate(15deg); <br />

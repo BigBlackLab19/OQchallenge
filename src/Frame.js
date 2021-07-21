@@ -68,7 +68,7 @@ const ObjectOne = styled.div`
   height: 213px;
   left: 284px;
   top: 108px;
-  background-color: #c4c4c4;
+  background-color: #2bc6e7;
 `;
 
 const ObjectTwo = styled.div`
@@ -80,7 +80,7 @@ const ObjectTwo = styled.div`
   height: 213px;
   left: 773.13px;
   top: 103px;
-  background-color: #c92929;
+  background-color: #d6d6d7;
   border: 5px solid #000000;
   box-sizing: border-box;
   transform: rotate(15deg);
@@ -95,9 +95,9 @@ const ObjectThree = styled.div`
   height: 213px;
   left: 287px;
   top: 439px;
-  color: white;
 
   background: #000000;
+  color: white;
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 10px 25px 5px rgba(0, 0, 0, 0.25);
@@ -113,7 +113,7 @@ const ObjectFour = styled.div`
   left: 859.61px;
   top: 430px;
 
-  background: #36c929;
+  background: #fcac3a;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: rotate(45deg);
 `;
@@ -122,6 +122,7 @@ const TopFrame = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid #000000;
   width: 100%;
   height: 53px;
   background-color: #522dd9;
@@ -136,6 +137,7 @@ const Container = styled.div`
 
 const LeftSideBar = styled.div`
   width: 220px;
+  border: 2px solid #000000;
   height: 100vh;
   background-color: #323135;
 `;
